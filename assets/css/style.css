@@ -36,7 +36,7 @@ header {
 header h1 {
   font-weight: bold;
   margin: 0;
-  font-size: 38px;
+  font-size: 48px;
   color: var(--tertiary-color);
   text-shadow: 0 0 5px rgb(255, 255, 255, 25%);
 }
@@ -75,35 +75,36 @@ header nav ul li a:hover {
 /* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
-  padding: 40px 35px;
+  padding: 20px 15px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
 footer h2 {
   color: var(--tertiary-color);
-  font-size: 30px;
-  margin: 0;
-}
+  font-size: 16px;
+  margin: 0 0 0 80%;
+  }
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
 section {
   padding: 25px;
 } 
+
 .block-header {
   width: 35%;
   font-style: italic;
-  font-size: 3.0vw;
+  font-size: 32px;
   margin: auto 0 auto 0;
   color: var(--primary-color);
+  text-shadow: 0 0 15px rgb(255, 255, 255);
 }
 .block-info {
   width: 35%;
   font-style: bold;
-  font-size: 1.5vw;
+  font-size: 22px;
   margin: auto 0 auto 0;
   color: var(--tertiary-color);
 }
@@ -187,6 +188,7 @@ section {
 
 .project-info h3 {
   font-size: 22px;
+  color:gray;  
 }
 
 .project-info h4 {
@@ -195,27 +197,42 @@ section {
   margin-bottom: 5px;
 }
 
+.project-info a {
+  color:gray;  
+}
+
 /* WORK END */
 
 /* CONTACT ME STYLES START */
 .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-shadow: 0 0 10px rgba(201, 128, 128, 0.2);
+  line-height: 1.2;
   background: var(--secondary-color);
-}
+  }
 
-.contact h2 {
-  color: var(--tertiary-color);
-}
+  .contact h2 {
+    color: var(--tertiary-color);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
 
 .contact-info {
   width: 65%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto 0 auto 0;
+}
+
+.contact-info a {
+  color: var(--tertiary-color);
+  font-size: 24px;
 }
 
 /* CONTACT ME STYLES END */
-
-/* UTILITIES */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -243,16 +260,6 @@ section {
   footer h2, footer div {
     text-align: center;
     width: 100%;
-  }
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-  .section-title {
-    width: 80%;
   }
   
   .trainer {
