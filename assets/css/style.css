@@ -201,6 +201,10 @@ section {
   color:gray;  
 }
 
+.project:first-child {
+  width: 500px;
+  height: 500px;
+}
 /* WORK END */
 
 /* CONTACT ME STYLES START */
