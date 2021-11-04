@@ -30,7 +30,7 @@ header {
   background-attachment: fixed;
   background-position: 90%;
   z-index: 9999;
-}
+  }
 
 header h1 {
   font-weight: bold;
@@ -38,7 +38,7 @@ header h1 {
   font-size: 48px;
   margin-left: 0;
   color: var(--tertiary-color);
-  text-shadow: 0 0 5px rgb(255, 255, 255, 25%);
+  border-bottom: 3px solid var(--tertiary-color);
 }
 
 header a {
@@ -90,7 +90,7 @@ footer h2 {
 
 /* STYLE ALL SECTION TAGS */
 section {
-  padding: 25px;
+  padding: 30px;
 } 
 
 .block-header {
@@ -99,7 +99,6 @@ section {
   font-size: 32px;
   margin: auto 0 auto 0;
   color: var(--primary-color);
-  text-shadow: 0 0 15px rgb(255, 255, 255);
 }
 .block-info {
   width: 35%;
@@ -127,6 +126,9 @@ section {
   text-align: left;
 }
 
+.hero h2 {
+  text-shadow: 0 0 15px rgb(255, 255, 255);
+}
 /* HERO STYLES END */
 
 /* ABOUT ME STYLES */
@@ -197,13 +199,12 @@ section {
   margin-bottom: 5px;
 }
 
-.project-info a {
-  color:gray;  
-}
-
 .project:first-child {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
+}
+.project:hover {
+  background-color: var(--primary-color);
 }
 /* WORK END */
 
@@ -268,23 +269,15 @@ section {
 
   footer h2 {
     margin: 0;
-    font-size: 12px;
-  }
-  
-  .block-header {
     font-size: 18px;
   }
   
-  .block-info {
-    font-size: 12px;
+  .block-header {
+    font-size: 24px;
   }
   
-  .contact-info {
-    width: 40%;
-  }
-  .contact-info a {
-    font-size: 12px;
-    padding: 10px;
+  .block-info {
+    font-size: 18px;
   }
 }
 
@@ -298,13 +291,16 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
-  .intro p {
-    width: 100%;
+  footer h2 {
+    margin: 0;
+    font-size: 12px;
   }
 
-  .project {
-    flex: 0 100%;
+  .block-header {
+    font-size: 18px;
   }
-
+  
+  .block-info {
+    font-size: 12px;
+  }
 }
