@@ -36,6 +36,7 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 48px;
+  margin-left: 0;
   color: var(--tertiary-color);
   text-shadow: 0 0 5px rgb(255, 255, 255, 25%);
 }
@@ -226,6 +227,11 @@ section {
   margin: auto 0 auto 0;
 }
 
+.contact-info img {
+  height: 70px;
+  margin: 0;
+}
+
 .contact-info a {
   color: var(--tertiary-color);
   font-size: 24px;
@@ -256,17 +262,25 @@ section {
     font-size: 20px;
   }
 
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
+  footer h2 {
+    margin: 0;
+    font-size: 12px;
   }
   
-  .trainer {
-    flex: 0 70%;
+  .block-header {
+    font-size: 18px;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
+  .block-info {
+    font-size: 12px;
+  }
+  
+  .contact-info {
+    width: 40%;
+  }
+  .contact-info a {
+    font-size: 12px;
+    padding: 10px;
   }
 }
 
@@ -276,57 +290,17 @@ section {
     padding: 30px 15px;
   }
 
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
 
   .intro p {
     width: 100%;
   }
 
-  .trainer {
+  .project {
     flex: 0 100%;
   }
 
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
-  }
 }
