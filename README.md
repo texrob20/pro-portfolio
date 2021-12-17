@@ -20,3 +20,6 @@ Here is the layout of the site:
 - Footer: copyright of page
 
 The site incorporates flexboxes and media queries to improve site functionality across various devices and screen sizes.
+
+## Deployed Site
+https://texrob20.github.io/pro-portfolio/
